@@ -1,0 +1,296 @@
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  background-color: #0c0a04;
+}
+.header-container {
+  height: 15vh;
+  background-color: #1db954;
+}
+.search-container {
+  height: 25vh;
+}
+.userData-container {
+  height: 60vh;
+  background-color: #1db954;
+}
+.data-split-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 45vh;
+}
+.song-list-container {
+  margin: 2% 2%;
+  padding: 4%;
+  width: 45%;
+  background-color: white;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 6px;
+  box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
+}
+.mood-filters-container {
+  background-color: #191414;
+  height: 15vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mood-filter {
+  margin: 2% 2%;
+  width: 15%;
+  background-color: white;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 6px;
+  box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
+}
+#logo {
+  position: absolute;
+  height: 60px;
+  width: 185px;
+  top: 60px;
+  right: 0px;
+  left: 10%;
+  bottom: 0px;
+}
+.svg-icon {
+  position: absolute;
+  left: 30%;
+  top: 60px;
+  height: 30px;
+  width: 30px;
+  fill: white;
+}
+#query{
+  position: absolute;
+  width: 470px;
+  border-radius: 2px;
+  border: none;
+  top: 2.6%;
+  left: 33%;
+}
+#query:focus {
+  border: #FFFF;
+}
+.user-card {
+  position: absolute;
+  left: 85%;
+  top: 5%;
+}
+.likes-container {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  background-color: #191414;
+  width: 30%;
+}
+.rendered-songs {
+  margin: 1% auto;
+  /* background-color: pink; */
+  height: 30vh;
+  width: 80%;
+  background-color: white;
+}
+.suggestions-container {
+  margin: 1% auto;
+  /* background-color: pink; */
+  height: 30vh;
+  width: 80%;
+  background-color: white;
+}
+.likes-container h2 {
+  color: white;
+}
+#like-header-grn {
+  color: #1db954;
+}
+.user-card-d {
+  position: absolute;
+  width: 444px;
+  height: 624px;
+  left: 35%;
+  top: 10%;
+  background: #191414;
+  border-radius: 5px 5px 5px 5px;
+}
+#username-input {
+  position: absolute;
+  top: 40%;
+  right: 18.77%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  height: 30px;
+  border:none;
+  width: 280px;
+}
+.username-label{
+  position: absolute;
+  right: 66%;
+  top: 35%;
+  color: white;
+}
+.account-update-btn{
+  position: absolute;
+  top: 70%;
+  right: 18%;
+  width: 280px;
+  height: 32px;
+  background:#1db954 ;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+.account-logout-btn{
+  position: absolute;
+  top: 90%;
+  right: 18%;
+  width: 280px;
+  height: 32px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  color: black;
+}
+.user-card-d h2 {
+  position: absolute;
+  top: 22%;
+  right: 35.2%;
+  color: #1db954;
+}
+.user-card-d a{
+  position: absolute;
+  top: 60%;
+  right: 46%;
+  text-decoration: none;
+  color: #1db954;
+}
+.user-card-d img {
+  border: 1px white solid;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  top: 3%;
+  left: 35.5%;
+  border-radius: 30px;
+}
+.suggestions-container {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  background-color: #191414;
+  width: 30%;
+  color: white;
+  height: 350px;
+}
+.suggestions-container img {
+  height: 50px;
+  width: 50px;
+}
+.suggestions-container h2 {
+  color: white
+}
+.suggestions-header-grn {
+  color: #1db954
+}
+.suggestion::-webkit-scrollbar {
+  display: none;
+}
+.suggestion {
+  color:white;
+  -ms-overflow-style: none;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#dropdown {
+  position: absolute;
+  top: 7%;
+  width: 200px;
+  left: 33%;
+}
+/* Signin component */
+.signin-div {
+  color: white;
+  padding: 10%;
+  margin: 8% 15%;
+}
+h2 {
+  font-size: 3rem;
+}
+input {
+  margin: 1% 0;
+  padding: 1.5% 3%;
+}
+.signup {
+  background-color: #1cb853;
+  border-radius: 500px;
+  color: white;
+  font-size: 1rem;
+  padding: 1.5% 3%;
+}
+.signup:hover {
+  background-color: #1ED760;
+  cursor: pointer;
+}
+.login:hover {
+  cursor: pointer;
+}
+.rendered-songs {
+  height: 35vh;
+  margin: 0 auto; 
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+}
+.suggestions-container {
+  height: 35vh;
+  margin: 0 auto; 
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+}
+.song::-webkit-scrollbar {
+  display: none
+}
+.song{
+  color:black;
+  -ms-overflow-style: none;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.song img {
+  height: 60px;
+  width: 60px;
+}
+.render-songs-cnt {
+  width: 100%;
+}
+.delete-account-btn {
+  position:absolute;
+  top: 82%;
+  width: 280px;
+  height: 32px;
+  right: 18%;
+  background:red;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+.like {
+  color: white;
+}
+.like img {
+  height: 60px;
+  width: 60px;
+}
